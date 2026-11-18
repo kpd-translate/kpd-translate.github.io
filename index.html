@@ -35,6 +35,13 @@ h1,h2,h3{font-family:'Mitr',sans-serif;margin:0}
 .qr .box{background:#FAF6EE;border:1px solid #EDE5D6;border-radius:20px;padding:16px;margin:16px 0 12px}
 .qr .box img{width:100%;display:block;border-radius:8px}
 .donate .txt{flex:1 1 320px;max-width:460px;display:flex;flex-direction:column;gap:12px}
+.hero-btns{flex:0 0 330px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hero-btns .btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.hero-btns .btn-gold{grid-column:1/-1}
+.hero-box h1 em{white-space:nowrap}
+.btn-coffee{background:transparent;border:1.5px solid var(--gold);color:var(--gold)}.btn-coffee:hover{background:rgba(255,200,61,.12);color:var(--gold)}
+section[id]{scroll-margin-top:84px}
+@media (max-width:640px){.hero-btns{flex:1 1 100%}}
 .dl{display:flex;flex-direction:column;gap:4px}.dl small{color:var(--dim);font-size:13px;text-align:center}
 .card{background:var(--s1);border:1px solid var(--line);border-radius:20px}
 .chip{display:inline-block;background:var(--bg);border:1px solid #4A3A6B;color:var(--soft);border-radius:999px;padding:4px 12px;font-size:14px}
@@ -144,9 +151,10 @@ footer img{width:56px;height:56px;border-radius:50%;object-fit:cover}
 <h1>อยากจะแปลก็แปล <em>แปลเกมตามใจ</em></h1>
 <p>แปลใหม่จากต้นฉบับภาษาญี่ปุ่น เกลาสำนวนให้ตัวละครพูดเหมือนคนไทยพูดจริง ๆ</p>
 </div>
-<div style="flex:1 1 240px;display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end">
+<div class="hero-btns">
 <a class="btn btn-gold" href="#projects">ดูผลงานแปล</a>
 <a class="btn btn-line" href="#install">วิธีลง</a>
+<a class="btn btn-coffee" href="#donate"><span aria-hidden="true">☕</span>เลี้ยงกาแฟ</a>
 </div>
 </div>
 </div>
